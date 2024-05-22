@@ -1,0 +1,215 @@
+/* App.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Home container */
+.home-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Navbar styles */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #007bff;
+  border-radius: 8px;
+}
+
+.navbar ul li {
+  padding: 10px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  color: #ffd700;
+}
+
+/* Home content */
+.content {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Commercial component */
+.commercial-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.commercial-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+table th {
+  background-color: #f0f0f0;
+}
+
+.add-commercial {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-commercial input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-commercial button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-commercial button:hover {
+  background-color: #0056b3;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* Voucher.css */
+
+/* Voucher container */
+.voucher-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+/* Voucher heading */
+.voucher-heading {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+
+}
+
+/* Table styles */
+.voucher-table {
+  width: 50%;
+  border-collapse: collapse;
+  overflow-y: auto; /* Add this line for the scroll bar */
+  scroll-behavior: smooth;
+}
+
+
+.voucher-table th,
+.voucher-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.voucher-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Form styles */
+.voucher-form {
+  margin-top: 20px;
+}
+
+.voucher-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.voucher-form input[type='text'],
+.voucher-form input[type='file'],
+.voucher-form button {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.voucher-form button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.voucher-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
