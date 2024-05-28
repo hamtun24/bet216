@@ -19,13 +19,14 @@ a:hover {
 
 /* Home container */
 .home-container {
-  width: 90%;
-  max-width: 1200px;
+  width: 150%;
+  max-width: 1500px;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  transform: translateZ(30px); /* Add 3D effect */
 }
 
 /* Navbar styles */
@@ -77,6 +78,7 @@ p {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  transform: rotateX(3deg) rotateY(3deg); /* Add 3D effect */
 }
 
 .commercial-container h2 {
@@ -119,10 +121,12 @@ table th {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transform: scale(1.05); /* Add 3D effect */
 }
 
 .add-commercial button:hover {
   background-color: #0056b3;
+  transform: scale(1); /* Remove scale on hover */
 }
 
 button {
@@ -133,11 +137,14 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transform: perspective(100px) rotateX(10deg); /* Add 3D effect */
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: perspective(100px) rotateX(0); /* Remove rotation on hover */
 }
+
 /* Voucher.css */
 
 /* Voucher container */
@@ -149,13 +156,13 @@ button:hover {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+  transform: translateY(-10px); /* Add 3D effect */
 }
 
 /* Voucher heading */
 .voucher-heading {
   font-size: 1.5em;
   margin-bottom: 20px;
-
 }
 
 /* Table styles */
@@ -165,7 +172,6 @@ button:hover {
   overflow-y: auto; /* Add this line for the scroll bar */
   scroll-behavior: smooth;
 }
-
 
 .voucher-table th,
 .voucher-table td {
@@ -202,14 +208,142 @@ button:hover {
   background-color: #007bff;
   color: #fff;
   cursor: pointer;
+  transform: translateY(-5px); /* Add 3D effect */
 }
 
 .voucher-form button:hover {
   background-color: #0056b3;
+  transform: translateY(0); /* Remove translateY on hover */
 }
 
 /* Error message */
 .error-message {
   color: red;
   margin-top: 10px;
+}
+
+/* Stat.css */
+
+.container {
+  padding: 20px;
+  width: 100%; /* Changed width to 100% */
+}
+
+.table-container {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  width: 100%; /* Changed width to 100% */
+}
+
+.bl-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bl-table th, .bl-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.bl-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.bl-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.bl-table tr:hover {
+  background-color: #ddd;
+}
+
+.bl-table button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bl-table button:focus {
+  outline: none;
+}
+
+.bl-table button svg {
+  font-size: 1.2em;
+  color: #007bff;
+}
+
+/* Additional styles */
+.sss{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.CommStat {
+  max-width: 40%;
+}
+
+.totals-container {
+  max-width: 40%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.comstat{
+  margin: 10
+}
+
+.print-content {
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  padding: 20mm; /* Add padding for margins */
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.print-content .tt {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: underline; /* Corrected the font-style to text-decoration */
+  margin-bottom: 30px;
+}
+
+
+.print-content p {
+  margin: 10px 0;
+}
+
+.print-content p strong {
+  display: inline-block;
+  width: 50%;
+}
+
+.print-content p:last-child {
+  margin-top: 40px;
+}
+
+.print-content p:last-child strong {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.print-content p:last-child::after {
+  content: '';
+  display: block;
+  border-top: 1px solid black;
+  width: 80mm; /* Length of signature lines */
+  margin: 10px auto;
+}
+
+.print-content p:last-child p {
+  text-align: center;
+  font-weight: normal;
 }
